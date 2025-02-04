@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label for="text">Input</label>
+            <input type="text" id="text" name="text" placeholder="Enter text" value="text">
+        </div>
+        <div>
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea" placeholder="Write text..."></textarea>
+        </div>
+        <div>
+            <label for="select">Select</label>
+            <select id="select">
+                <option value="item_0">Select item</option>
+                <option value="item_1">Item 1</option>
+                <optgroup label="Item 2">
+                    <option value="item_21">Item 2.1</option>
+                    <option value="item_22">Item 2.2</option>
+                </optgroup>
+            </select>
+        </div>
+        <button type="submit">Button</button>
+    </form>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

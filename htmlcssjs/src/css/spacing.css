@@ -1,0 +1,63 @@
+.padding {
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+}
+
+.padding:hover {
+    background-color: black;
+    color: white;
+}
+
+.padding-top-and-bottom {
+    padding-block-start: 32px;
+    padding-block-end: 32px;
+}
+
+.padding-top-and-bottom:hover {
+    background-color: black;
+    color: white;
+}
+
+.padding-left-and-right {
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+}
+
+.padding-left-and-right:hover {
+    background-color: black;
+    color: white;
+}
+
+.margin {
+    margin-top: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+.margin:hover {
+    background-color: black;
+    color: white;
+}
+
+.margin-top-and-bottom {
+    margin-block-start: 32px;
+    margin-block-end: 32px;
+}
+
+.margin-top-and-bottom:hover {
+    background-color: black;
+    color: white;
+}
+
+.margin-left-and-right {
+    margin-inline-start: 32px;
+    margin-inline-end: 32px;
+}
+
+.margin-left-and-right:hover {
+    background-color: black;
+    color: white;
+}

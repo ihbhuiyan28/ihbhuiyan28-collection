@@ -1,0 +1,25 @@
+.border {
+    border-style: solid;
+    border-color: red;
+    border-width: 4px;
+    border-radius: 16px;
+}
+
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 4px;
+    border-bottom-right-radius: 16px;
+}
+
+.border-top-and-bottom {
+    border-block-style: solid;
+    border-block-color: red;
+    border-block-width: 4px;
+}
+
+.border-end {
+    border-block-end-style: solid;
+    border-block-end-color: red;
+    border-block-end-width: 4px;
+}

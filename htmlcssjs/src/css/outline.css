@@ -1,0 +1,12 @@
+.box {
+    border-style: solid;
+    border-width: 4px;
+    width: 400px;
+    height: 200px;
+}
+
+.box:hover {
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+}

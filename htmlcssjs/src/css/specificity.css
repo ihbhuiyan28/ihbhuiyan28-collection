@@ -1,0 +1,11 @@
+#id {
+    color: red;
+}
+
+.class {
+    color: green;
+}
+
+p {
+    color: blue !important;
+}

@@ -1,0 +1,11 @@
+.box {
+    border-style: solid;
+
+    width: 800px;
+    /* min-width: 800px; */
+    /* max-width: 800px; */
+
+    height: 400px;
+    /* min-height: 400px; */
+    /* max-height: 400px; */
+}

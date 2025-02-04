@@ -1,0 +1,53 @@
+.flex-container {
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+
+    /* height: 350px; */
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-flow: row nowrap; */
+
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* align-content: space-evenly; */
+}
+
+.flex-item {
+    color: white;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.item-1 {
+    background-color: red;
+}
+
+.item-2 {
+    background-color: blue;
+}
+
+.item-3 {
+    background-color: yellow;
+    /* flex-grow: 1; */
+    /* align-self: flex-start; */
+}
+
+.item-4 {
+    background-color: orange;
+    /* flex-grow: 1; */
+    /* align-self: flex-end; */
+}
+
+.item-5 {
+    background-color: violet;
+    /* flex-shrink: 0; */
+}
+
+.item-6 {
+    background-color: green;
+    /* flex-shrink: 0; */
+}
