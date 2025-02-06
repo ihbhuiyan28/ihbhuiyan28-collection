@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <button type="button" class="class" id="id" name="name">Button</button>
+
+    <script>
+        const id = document.getElementById("id");
+        console.log(id);
+
+        const name = document.getElementsByName("name");
+        console.log(name);
+
+        const tagName = document.getElementsByTagName("button");
+        console.log(tagName);
+
+        const className = document.getElementsByClassName("class");
+        console.log(className);
+
+        const query = document.querySelector("button");
+        console.log(query);
+
+        const queries = document.querySelectorAll("button");
+        console.log(queries)
+    </script>
+</body>
+
+</html>

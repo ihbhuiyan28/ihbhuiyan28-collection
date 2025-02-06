@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Heading 1</h1>
+        <p>This is a paragraph</p>
+        <ul>
+            <li>Item 1</li>
+            <li class="second">Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        const ul = document.querySelector("ul");
+        const li = document.querySelector(".second");
+
+        const parentNode = ul.parentNode;
+        console.log(parentNode);
+
+        const firstChild = ul.firstChild;
+        console.log(firstChild);
+
+        const firstElementChild = ul.firstElementChild;
+        console.log(firstElementChild);
+
+        const lastChild = ul.lastChild;
+        console.log(lastChild);
+
+        const lastElementChild = ul.lastElementChild;
+        console.log(lastElementChild);
+
+        const childNodes = ul.childNodes;
+        console.log(childNodes);
+
+        const children = ul.children;
+        console.log(children);
+
+        const nextSibling = li.nextSibling;
+        console.log(nextSibling);
+
+        const nextElementSibling = li.nextElementSibling;
+        console.log(nextElementSibling);
+
+        const previousSibling = li.previousSibling;
+        console.log(previousSibling);
+
+        const previousElementSibling = li.previousElementSibling;
+        console.log(previousSibling);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="alert('Hello Button 1!');">Button 1</button>
+    <button type="button" onclick="handleClick()">Button 2</button>
+    <button type="button" class="btn-3">Button 3</button>
+    <button type="button" class="btn-4">Button 4</button>
+
+    <script>
+        function handleClick() {
+            alert("Hello Button 2!");
+        }
+
+        const btn3 = document.querySelector(".btn-3");
+        btn3.onclick = function () {
+            alert("Hello Button 3!");
+        }
+
+        const btn4 = document.querySelector(".btn-4");
+        btn4.addEventListener("click", function () {
+            alert("Button 4!");
+        });
+    </script>
+</body>
+
+</html>

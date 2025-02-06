@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label>Text</label>
+            <input type="text" class="text" placeholder="Enter text">
+        </div>
+        <div>
+            <label>Select</label>
+            <select class="select">
+                <option value="">Select Item</option>
+                <option value="first">Item 1</option>
+                <option value="second">Item 2</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox">
+            <label>Checkbox</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        const text = document.querySelector(".text");
+        const select = document.querySelector(".select");
+        const checkbox = document.querySelector(".checkbox");
+
+        form.addEventListener("submit", function (event) {
+            // console.log(event);
+            const data = {
+                "text": text.value,
+                "select": select.value,
+                "checkbox": checkbox.checked
+            };
+            console.log(data);
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

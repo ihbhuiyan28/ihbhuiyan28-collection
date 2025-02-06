@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <h1 class="text-danger text-uppercase">Heading 1</h1>
+
+    <script>
+        const h1 = document.querySelector("h1");
+        const color = h1.style.color = "red";
+        console.log(color);
+        h1.style.textTransform = "uppercase";
+
+        const className = h1.className;
+        console.log(className);
+        console.log(typeof className);
+
+        const classList = h1.classList;
+        console.log(classList);
+        console.log(typeof classList);
+    </script>
+</body>
+
+</html>

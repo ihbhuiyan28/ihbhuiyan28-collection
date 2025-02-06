@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice App</title>
+</head>
+
+<body>
+
+    <div></div>
+
+    <script>
+        const div = document.querySelector("div");
+        console.log(div);
+
+        const h1 = document.createElement("h1");
+
+        h1.textContent = "Heading 1";
+        div.appendChild(h1);
+
+        const textContent = h1.textContent;
+        console.log(textContent);
+
+        const innerText = h1.innerText;
+        console.log(innerText);
+
+        div.innerHTML = "<p>This is a paragraph</p>";
+
+        const ul = document.createElement("ul");
+        div.appendChild(ul);
+
+        const secondList = document.createElement("li");
+        secondList.innerText = "Item 2";
+        ul.append(secondList);
+
+        const firstList = document.createElement("li");
+        firstList.innerText = "Item 1";
+        ul.prepend(firstList);
+
+        const lists = ["Item 3", "Item 4"];
+        const items = lists.map((list) => {
+            const li = document.createElement("li");
+            li.innerText = list;
+            return li;
+        });
+        ul.lastChild.after(...items);
+
+        const replaceChild = document.createElement("li");
+        replaceChild.innerText = "Item 5";
+        const tempLastChild = ul.lastChild;
+        ul.replaceChild(replaceChild, tempLastChild);
+
+        const lastChild = ul.lastChild;
+        ul.removeChild(lastChild);
+    </script>
+</body>
+
+</html>
